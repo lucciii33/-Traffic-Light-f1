@@ -29,6 +29,9 @@ export const Home = ({ counter }) => {
 	function switchColor4() {
 		if (color4 == "grey") setColor4("red");
 	}
+	 function switchColor5() {
+		if (color5 == color , color1 , color2 , color3 , color4 ) setColor5("green");
+	 }
 
 	function switchClockStatus() {
 		if (timer == null) {
@@ -49,6 +52,18 @@ export const Home = ({ counter }) => {
 			timer = setInterval(switchColor4, 5000);
 			console.log(timer);
 		}
+		if (timer === timer) {
+			timer = setInterval(switchColor4, 5000);
+			console.log(timer);
+		}
+		if (timer === timer) {
+			timer = setInterval(switchColor4, 6000);
+			console.log(timer);
+		}
+		if (timer === timer) {
+			timer = setInterval(switchColor5, 7000);
+			console.log(timer);
+		}
 		else {
 			clearInterval(timer);
 			timer = null;
@@ -63,7 +78,10 @@ export const Home = ({ counter }) => {
 		<div className="text-center mt-5 position-relative">
 			<div className=" position-absolute top-50 start-50">
 				<div>
-					<div className="semaforo m-2 mb-0">semaforo</div>
+					<div className='semaforo m-2 mb-0'>
+
+					<div className={color5 == "red" ? "green" : ""} onClick={() => setColor("green")}>semaforo</div>
+					</div>
 
 
 					<div className="d-flex mb-0">
